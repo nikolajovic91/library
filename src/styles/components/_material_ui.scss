@@ -1,0 +1,26 @@
+
+.MuiTableCell-body:nth-child(1) {
+  width: 150px;
+}
+
+.MuiTableCell-body:nth-child(2) {
+  width: 400px;
+}
+
+.MuiStepIcon-root {
+  transform: scale(1.5);
+  color: #e5e5e5 !important;
+}
+
+.MuiStepIcon-text {
+  fill: #777 !important;
+}
+
+
+.MuiStepIcon-root.MuiStepIcon-active {
+  color: $dark-grey !important;
+
+  .MuiStepIcon-text {
+    fill: $white-color !important;
+  }
+}

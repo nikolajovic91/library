@@ -1,0 +1,94 @@
+.genres {
+  @include flexRow(space-between, flex-start, wrap);
+
+  &__label {
+    cursor: pointer;
+    margin: auto;
+    width: 100%;
+    height: 100%;
+    padding: 15px 0;
+    text-align: center;
+  }
+}
+
+.form {
+  &__information {
+    margin: 20px 0 70px;
+
+    label {
+      display: block;
+      font-size: 12px;
+      margin-bottom: 5px;
+    }
+
+    input, select, textarea {
+      width: 100%;
+      padding: 8px;
+      border: 1px solid $text-color;
+      border-radius: 5px;
+      margin-bottom: 20px;
+    }
+
+    textarea {
+      height: 100px;
+      resize: none;
+      overflow: scroll;
+    }
+
+    &--grid3 {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-gap: 30px;
+    }
+
+    &--grid4 {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-gap: 30px;
+    }
+  }
+}
+
+.form__btns {
+  @include flexRow(flex-start, flex-start, nowrap);
+  margin-top: 70px;
+  position: absolute;
+  bottom: 30px;
+  right: 15px;
+
+  button {
+    margin-left: 20px;
+  }
+}
+
+
+.new__subgenre {
+  display: block;
+  margin-top: 10px;
+
+  label {
+    display: block;
+    font-size: 12px;
+    margin-bottom: 5px;
+  }
+
+  input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid $text-color;
+    border-radius: 5px;
+    margin-bottom: 20px;
+  }
+
+  .req_desc, .req_desc_label {
+    display: inline;
+    width: auto;
+    margin-right: 10px;
+    margin-top: 10px;
+    transform: scale(1.3);
+  }
+
+  .req_desc_label {
+    margin-top: 0;
+  }
+}

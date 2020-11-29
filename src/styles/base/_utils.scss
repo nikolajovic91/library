@@ -1,0 +1,11 @@
+.grey {
+  background-color: $dark-grey !important;
+  color: $white-color !important;
+}
+
+button:disabled {
+  cursor: not-allowed;
+  border: 1px solid #eee;
+}
+
+

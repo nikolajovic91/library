@@ -1,0 +1,42 @@
+.main {
+  height: 100%;
+  min-height: 100vh;
+  width: 100%;
+  @include flexRow(center,center,nowrap)
+}
+
+.container {
+  width: 750px;
+  height: 100%;
+  min-height: 500px;
+  border: 1px solid $text-color;
+  border-radius: 5px;
+  background-color: #fff;
+  padding: 10px 15px 20px;
+  margin: 50px 0;
+  position: relative;
+
+  h4 {
+    font-weight: 300;
+  }
+}
+
+
+.success {
+  @include flexColumn(center,center,nowrap);
+  button {
+    width: 200px;
+    padding: 10px 30px;
+  }
+
+  p {
+    margin: 50px 0;
+  }
+}
+
+
+@media (max-width: 800px) {
+  .container {
+    width: 90%;
+  }
+}

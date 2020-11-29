@@ -1,0 +1,27 @@
+@mixin flexRow($justify-content: initial, $align-items: initial, $wrap: wrap) {
+  display: flex;
+  flex-direction: row;
+  justify-content: $justify-content;
+  align-items: $align-items;
+  flex-wrap: $wrap
+}
+
+@mixin flexColumn($justify-content: initial, $align-items: initial, $wrap: wrap) {
+  display: flex;
+  flex-direction: column;
+  justify-content: unquote($justify-content);
+  align-items: unquote($align-items);
+  flex-wrap: unquote($wrap);
+}
+
+
+@mixin btn($height:initial, $width: initial, $background-color: transparent, $color: black, $border: 1px solid transparent) {
+  @include flexRow(center,center,nowrap);
+  height: $height;
+  width: $width;
+  background-color: $background-color;
+  color: $color;
+  border: $border;
+  border-radius: 5px;
+  cursor: pointer;
+}
